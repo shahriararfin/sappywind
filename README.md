@@ -33,7 +33,7 @@ npm install
 ###### Dependencies, used in this template:
 
 - [Autoprefixer](https://github.com/postcss/autoprefixer) - to add vendor prefixes.
-- [PostCSS](https://github.com/postcss/postcss) - to process CSS and use plugins.
+- [PostCSS](https://github.com/postcss/postcss) - to process CSS and use its ecosystem.
 - [PurgeCSS](https://github.com/FullHuman/purgecss) - to remove unused CSS.
 - [cssnano](https://github.com/cssnano/cssnano) - to minify CSS.
 - [lodash](https://github.com/lodash/lodash) - to iterate arrays & objects while creating your own `tailwind css` plugins.

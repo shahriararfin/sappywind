@@ -5,8 +5,8 @@
 
 
 The default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup and webpack.
-
 [Tailwind](https://tailwindcss.com/) css documentation page.
+
 
 
 ## Getting started
@@ -18,6 +18,7 @@ You can clone and use this starter template in your `Sapper JS` and `Tailwind CS
 
 ```bash
 npx degit "shahriararfin/sappywind" my-app
+cd my-app
 ```
 
 
@@ -26,7 +27,6 @@ npx degit "shahriararfin/sappywind" my-app
 After cloning, install the dependencies with:
 
 ```bash
-cd my-app
 npm install
 ```
 

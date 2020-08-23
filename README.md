@@ -49,7 +49,7 @@ On your first terminal run `sapper` using:
 npm run dev
 ```
 
-On your second terminal run `sapper` using:
+On your second terminal run the command to watch tailwind css changes:
 ```bash
 npm run dev
 ```

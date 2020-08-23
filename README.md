@@ -51,5 +51,5 @@ npm run dev
 
 On your second terminal run the command to watch tailwind css changes:
 ```bash
-npm run dev
+npm run watch:tailwind
 ```

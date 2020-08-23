@@ -12,7 +12,7 @@ The default [Sapper](https://github.com/sveltejs/sapper) template, available for
 ## Getting started
 
 
-### Clone this starter template using `degit`
+### Clone this template using `degit`
 
 You can clone and use this starter template in your `Sapper JS` and `Tailwind CSS` Project. To clone this template, run:
 

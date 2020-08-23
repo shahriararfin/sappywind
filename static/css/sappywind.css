@@ -1,0 +1,165 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@responsive {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .grid-s-cols-2 {
+    grid-template-columns: 1fr 4px 1fr;
+  }
+
+  .w-auto-i {
+    width: auto !important;
+  }
+
+  .hidden-i {
+    display: none !important;
+  }
+
+  .active-block {
+    display: block !important;
+  }
+
+  .active-flex {
+    display: flex !important;
+  }
+
+  .top-50 {
+    top: 50%;
+    --transform-translate-y: -50%;
+  }
+
+  .left-50 {
+    left: 50%;
+    --transform-translate-x: -50%;
+  }
+
+  .top-100 {
+    top: 100%;
+  }
+
+  .left-100 {
+    left: 100%;
+  }
+
+  .truncated {
+    display: block !important;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
+/* ANCHOR Utilities */
+.section-heading {
+  @apply mb-6 text-gray-700 text-base;
+}
+
+@media (min-width: 640px) {
+  .section-heading {
+    @apply mb-8 text-lg;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:min-h-chk-screen {
+    min-height: calc(100vh - 56px);
+  }
+  .md\:h-chk-full {
+    height: calc(100vh - 80px);
+  }
+}
+
+.ellipsed,
+.rounded-icon {
+  @apply flex items-center justify-center rounded-full;
+}
+
+.rounded-icon > .icon {
+  width: 60%;
+  height: 60%;
+}
+
+.bordered {
+  @apply border border-gray-300;
+}
+
+.icon {
+  @apply w-full h-full fill-current;
+}
+
+/* ANCHOR Button */
+.btn {
+  @apply flex items-center justify-center whitespace-no-wrap select-none outline-none transition-colors duration-150 ease-in-out;
+}
+
+.btn:focus {
+  @apply outline-none;
+}
+
+/* ANCHOR Animations */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  opacity: 0.5;
+  transition: all 1s ease;
+  transform: scale(0);
+  animation: ripple 500ms linear;
+}
+
+@keyframes ripple {
+  to {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+.scale-in {
+  animation-name: scale-in;
+  animation-duration: 150ms;
+  animation-timing-function: cubic-bezier(0.2, 0, 0.13, 1.5);
+}
+
+.slide-in-top {
+  animation-name: slide-in-top;
+  animation-duration: 150ms;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.slide-in-top {
+  animation-name: slide-in-top;
+  animation-duration: 150ms;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  bottom: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
